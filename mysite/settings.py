@@ -63,7 +63,7 @@ ROOT_URLCONF = "mysite.urls"
 
 # Django Debug Toolbar https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
 INTERNAL_IPS = [
-    '127.0.0.1',
+    '127.0.0.1', 'localhost', '20.106.224.6'
 ]
 
 
@@ -91,8 +91,12 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "ENGINE": "django.db.backends.mysql",
+        'NAME': 'blog',                  
+        'USER': 'blog',                          
+        'PASSWORD': 'qwer3249@',                 
+        'HOST': 'localhost',                    
+        'PORT': '3306',        
     }
 }
 
