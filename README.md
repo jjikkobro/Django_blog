@@ -1,4 +1,5 @@
 # Django_blog
+## Folked from https://github.com/TheAbhijeet/Django_blog
 
 A blog application made on Django.
 
